@@ -1,0 +1,663 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Privacy Policy — Dua 360</title>
+<meta name="description" content="Privacy Policy for Dua 360 — how we collect, use, store, and protect your information.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #fbfaf8;
+    --surface: #ffffff;
+    --text: #1c1b19;
+    --text-muted: #5c5a55;
+    --border: #e7e3dc;
+    --accent: #0f7a5c;
+    --accent-dark: #0a5a43;
+    --accent-soft: #e7f4ef;
+    --warn-bg: #fdf6e8;
+    --warn-border: #efddae;
+    --radius: 14px;
+    --max-width: 880px;
+    --sidebar-width: 260px;
+  }
+
+  * { box-sizing: border-box; }
+
+  html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+    width: 100%;
+  }
+
+  body {
+    margin: 0;
+    overflow-x: hidden;
+    width: 100%;
+    max-width: 100vw;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    color: var(--text);
+    background: var(--bg);
+    line-height: 1.65;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  img, svg, table { max-width: 100%; }
+
+  a { color: var(--accent); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+
+  /* ---------- Top bar ---------- */
+  .topbar {
+    position: sticky;
+    top: 0;
+    z-index: 50;
+    background: rgba(251, 250, 248, 0.85);
+    backdrop-filter: saturate(180%) blur(10px);
+    border-bottom: 1px solid var(--border);
+  }
+  .topbar-inner {
+    max-width: 1180px;
+    margin: 0 auto;
+    padding: 14px 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .brand {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: 700;
+    font-size: 16px;
+    color: var(--text);
+  }
+  .brand-mark {
+    width: 30px;
+    height: 30px;
+    border-radius: 8px;
+    background: linear-gradient(135deg, var(--accent), var(--accent-dark));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 800;
+    flex-shrink: 0;
+  }
+  .topbar-meta {
+    font-size: 13px;
+    color: var(--text-muted);
+  }
+
+  /* ---------- Hero ---------- */
+  .hero {
+    max-width: 1180px;
+    margin: 0 auto;
+    padding: 56px 24px 28px;
+  }
+  .eyebrow {
+    display: inline-block;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--accent-dark);
+    background: var(--accent-soft);
+    padding: 5px 12px;
+    border-radius: 999px;
+    margin-bottom: 18px;
+  }
+  .hero h1 {
+    font-family: 'Source Serif 4', Georgia, serif;
+    font-size: clamp(32px, 5vw, 48px);
+    line-height: 1.1;
+    margin: 0 0 14px;
+    font-weight: 600;
+  }
+  .hero p.lede {
+    max-width: 680px;
+    font-size: 18px;
+    color: var(--text-muted);
+    margin: 0 0 8px;
+  }
+  .hero .updated {
+    font-size: 14px;
+    color: var(--text-muted);
+  }
+
+  /* ---------- Layout ---------- */
+  .layout {
+    max-width: 1180px;
+    margin: 0 auto;
+    padding: 0 24px 80px;
+    display: grid;
+    grid-template-columns: var(--sidebar-width) minmax(0, 1fr);
+    gap: 48px;
+    align-items: start;
+  }
+
+  /* ---------- Sidebar / TOC ---------- */
+  .toc {
+    position: sticky;
+    top: 76px;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 20px;
+  }
+  .toc h2 {
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: var(--text-muted);
+    margin: 0 0 12px;
+  }
+  .toc ol {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    counter-reset: toc;
+  }
+  .toc li {
+    counter-increment: toc;
+    margin-bottom: 2px;
+  }
+  .toc a {
+    display: flex;
+    gap: 10px;
+    align-items: baseline;
+    padding: 7px 8px;
+    border-radius: 8px;
+    color: var(--text);
+    font-size: 14px;
+    font-weight: 500;
+  }
+  .toc a::before {
+    content: counter(toc);
+    font-size: 12px;
+    font-weight: 700;
+    color: var(--accent);
+    min-width: 16px;
+  }
+  .toc a:hover {
+    background: var(--accent-soft);
+    text-decoration: none;
+  }
+  .toc a.active {
+    background: var(--accent-soft);
+    color: var(--accent-dark);
+  }
+
+  /* ---------- Article ---------- */
+  article.policy {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 8px 0;
+  }
+
+  .summary-card {
+    margin: 24px;
+    padding: 22px 24px;
+    background: var(--accent-soft);
+    border: 1px solid #cfe9de;
+    border-radius: 12px;
+  }
+  .summary-card h2 {
+    margin: 0 0 12px;
+    font-size: 15px;
+    color: var(--accent-dark);
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+  }
+  .summary-card ul {
+    margin: 0;
+    padding-left: 20px;
+  }
+  .summary-card li {
+    margin-bottom: 8px;
+    font-size: 15px;
+  }
+  .summary-card li:last-child { margin-bottom: 0; }
+
+  section.policy-section {
+    padding: 36px 32px;
+    border-top: 1px solid var(--border);
+    scroll-margin-top: 80px;
+  }
+  section.policy-section:first-of-type { border-top: none; }
+
+  section.policy-section h2 {
+    font-family: 'Source Serif 4', Georgia, serif;
+    font-size: 26px;
+    font-weight: 600;
+    margin: 0 0 16px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+  section.policy-section h2 .num {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    border-radius: 9px;
+    background: var(--accent-soft);
+    color: var(--accent-dark);
+    font-size: 14px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 800;
+    flex-shrink: 0;
+  }
+  section.policy-section h3 {
+    font-size: 16px;
+    font-weight: 700;
+    margin: 24px 0 10px;
+    color: var(--text);
+  }
+  section.policy-section p {
+    margin: 0 0 14px;
+    color: var(--text);
+    font-size: 15.5px;
+  }
+  section.policy-section ul {
+    margin: 0 0 14px;
+    padding-left: 22px;
+  }
+  section.policy-section li {
+    margin-bottom: 8px;
+    font-size: 15.5px;
+  }
+  section.policy-section strong { font-weight: 700; }
+
+  /* table */
+  .table-wrap {
+    overflow-x: auto;
+    margin: 16px 0;
+    border: 1px solid var(--border);
+    border-radius: 10px;
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14.5px;
+  }
+  thead th {
+    text-align: left;
+    background: #f4f2ee;
+    padding: 12px 16px;
+    font-weight: 700;
+    color: var(--text);
+    border-bottom: 1px solid var(--border);
+  }
+  tbody td {
+    padding: 12px 16px;
+    border-bottom: 1px solid var(--border);
+    vertical-align: top;
+  }
+  tbody tr:last-child td { border-bottom: none; }
+
+  .pill-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 16px 0 4px;
+  }
+  .pill {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    font-size: 13.5px;
+    font-weight: 600;
+    padding: 8px 14px;
+    border-radius: 999px;
+    background: var(--accent-soft);
+    color: var(--accent-dark);
+    border: 1px solid #cfe9de;
+  }
+  .pill svg { width: 14px; height: 14px; flex-shrink: 0; }
+
+  .note {
+    margin: 16px 0;
+    padding: 14px 16px;
+    background: var(--warn-bg);
+    border: 1px solid var(--warn-border);
+    border-radius: 10px;
+    font-size: 14px;
+    color: #6b5a1f;
+  }
+  .note strong { color: #59481a; }
+
+  .contact-card {
+    margin: 36px 32px 32px;
+    padding: 28px;
+    border-radius: 12px;
+    background: linear-gradient(135deg, var(--accent), var(--accent-dark));
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  .contact-card h2 {
+    margin: 0 0 6px;
+    font-size: 20px;
+    font-family: 'Source Serif 4', Georgia, serif;
+  }
+  .contact-card p { margin: 0; opacity: 0.9; font-size: 14.5px; }
+  .contact-card a.btn {
+    background: #fff;
+    color: var(--accent-dark);
+    padding: 10px 20px;
+    border-radius: 999px;
+    font-weight: 700;
+    font-size: 14px;
+    white-space: nowrap;
+  }
+  .contact-card a.btn:hover { text-decoration: none; opacity: 0.92; }
+
+  footer.site-footer {
+    max-width: 1180px;
+    margin: 0 auto;
+    padding: 28px 24px 60px;
+    color: var(--text-muted);
+    font-size: 13px;
+    text-align: center;
+  }
+
+  .back-to-top {
+    position: fixed;
+    bottom: 24px;
+    right: 24px;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background: var(--accent);
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 6px 18px rgba(15, 122, 92, 0.35);
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.2s ease, transform 0.2s ease;
+    z-index: 40;
+  }
+  .back-to-top.visible { opacity: 1; pointer-events: auto; }
+  .back-to-top:hover { transform: translateY(-3px); }
+
+  /* ---------- Mobile ---------- */
+  @media (max-width: 860px) {
+    .layout {
+      grid-template-columns: 1fr;
+      padding-left: 16px;
+      padding-right: 16px;
+    }
+    .toc {
+      position: static;
+      margin-bottom: 8px;
+      padding: 16px;
+    }
+    .toc ol { columns: 2; }
+    section.policy-section { padding: 28px 20px; }
+    .summary-card { margin: 18px; }
+    .contact-card { margin: 28px 20px 24px; flex-direction: column; align-items: flex-start; }
+  }
+
+  @media (max-width: 600px) {
+    .topbar-inner { padding: 12px 16px; }
+    .topbar-meta { font-size: 12px; }
+    .hero { padding: 36px 16px 20px; }
+    .hero h1 { font-size: clamp(26px, 8vw, 34px); }
+    .hero p.lede { font-size: 16px; }
+    .layout { padding-left: 16px; padding-right: 16px; gap: 16px; }
+    .toc { padding: 14px; }
+    .toc ol { columns: 1; }
+    section.policy-section { padding: 22px 16px; }
+    section.policy-section h2 { font-size: 21px; gap: 10px; }
+    section.policy-section h2 .num { width: 28px; height: 28px; font-size: 13px; }
+    section.policy-section p,
+    section.policy-section li { font-size: 14.5px; }
+    .summary-card { margin: 14px; padding: 18px 16px; }
+    .pill-row { gap: 8px; }
+    .pill { font-size: 12.5px; padding: 7px 12px; }
+    table { font-size: 13px; }
+    thead th, tbody td { padding: 10px 12px; }
+    .contact-card { margin: 22px 14px 20px; padding: 22px 18px; }
+    .contact-card h2 { font-size: 18px; }
+    footer.site-footer { padding: 24px 16px 48px; font-size: 12.5px; }
+    .back-to-top { width: 40px; height: 40px; bottom: 16px; right: 16px; }
+  }
+
+  @media print {
+    .topbar, .toc, .back-to-top { display: none; }
+    .layout { grid-template-columns: 1fr; }
+  }
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <div class="topbar-inner">
+    <div class="brand">
+      <span class="brand-mark">D</span>
+      Dua 360
+    </div>
+    <div class="topbar-meta">Privacy Policy</div>
+  </div>
+</div>
+
+<header class="hero">
+  <span class="eyebrow">Legal · Privacy</span>
+  <h1>Privacy Policy for Dua 360</h1>
+  <p class="lede">This Privacy Policy explains how Dua 360 ("the App", "we", "us", or "our") collects, uses, stores, and protects information when you use the App. We built Dua 360 to be usable fully offline with no account at all — anything beyond that is optional and explained below.</p>
+  <p class="updated">Last updated: <strong>June 30, 2026</strong> · By using Dua 360, you agree to the collection and use of information in accordance with this policy.</p>
+</header>
+
+<div class="layout">
+
+  <nav class="toc" aria-label="Table of contents">
+    <h2>On this page</h2>
+    <ol>
+      <li><a href="#summary">Summary</a></li>
+      <li><a href="#information-we-collect">Information We Collect</a></li>
+      <li><a href="#how-we-use">How We Use Your Information</a></li>
+      <li><a href="#storage-security">Data Storage &amp; Security</a></li>
+      <li><a href="#sharing">Data Sharing &amp; Third Parties</a></li>
+      <li><a href="#rights">Your Rights &amp; Choices</a></li>
+      <li><a href="#children">Children's Privacy</a></li>
+      <li><a href="#changes">Changes to This Policy</a></li>
+      <li><a href="#contact">Contact Us</a></li>
+    </ol>
+  </nav>
+
+  <main>
+    <article class="policy">
+
+      <div class="summary-card" id="summary">
+        <h2>Quick Summary</h2>
+        <ul>
+          <li>The App works completely offline. You are never required to create an account or sign in.</li>
+          <li>Without signing in, your bookmarks and read history are stored <strong>only on your device</strong> and are never sent to us.</li>
+          <li>Signing in with Google is entirely optional and exists for one purpose: backing up your bookmarks and read history to the cloud so they survive a reinstall or lost device, and so they sync across your devices.</li>
+          <li>We do not show ads, run analytics or tracking SDKs, or sell, rent, or share your personal information with third parties for marketing purposes.</li>
+        </ul>
+      </div>
+
+      <section class="policy-section" id="information-we-collect">
+        <h2><span class="num">1</span>Information We Collect</h2>
+
+        <h3>1.1 Information Stored Only on Your Device (No Account Required)</h3>
+        <p>When you use the App without signing in, the following is stored locally on your device and is never transmitted to us:</p>
+        <ul>
+          <li><strong>Bookmarked duas</strong> — which duas you have saved</li>
+          <li><strong>Read history</strong> — which duas you have marked as read, used to show your reading progress</li>
+          <li><strong>App preferences</strong> — display language, translation language, theme (light/dark), font size and font choice, and notification reminder times</li>
+        </ul>
+        <p>This data stays on your device. Uninstalling the App or clearing its data removes it permanently, and we have no copy of it.</p>
+
+        <h3>1.2 Information Collected When You Sign In (Optional)</h3>
+        <p>If you choose to sign in with Google to enable backup and sync, we collect and store the following in our cloud database (Google Cloud Firestore), associated with your account:</p>
+        <ul>
+          <li><strong>Basic profile information</strong> from your Google account: email address, display name, and profile photo URL</li>
+          <li><strong>Your bookmarks</strong>, including which dua was bookmarked, the date and time it was bookmarked, its category, and the language you were using</li>
+          <li><strong>Your read history</strong>, including which duas you marked as read and when</li>
+        </ul>
+        <p>This is the same data described in section 1.1 — signing in simply copies it to the cloud (and back down to any other device where you sign in) so it isn't lost. We do not collect any additional personal information through the sign-in process beyond what Google provides for authentication.</p>
+
+        <h3>1.3 Push Notification Token</h3>
+        <p>The App uses Firebase Cloud Messaging to support push notifications. This generates a unique device token used solely to deliver notifications to your device. This token does not contain personal information and is not linked to your identity unless you are also signed in.</p>
+
+        <h3>1.4 Information We Do Not Collect</h3>
+        <div class="pill-row">
+          <span class="pill">No analytics SDKs</span>
+          <span class="pill">No advertising SDKs</span>
+          <span class="pill">No crash reporting</span>
+          <span class="pill">No location tracking</span>
+          <span class="pill">No contacts access</span>
+          <span class="pill">No ads displayed</span>
+        </div>
+        <p>We do not use analytics, advertising, or crash-reporting SDKs. We do not collect your location, contacts, browsing history, or any device identifiers beyond the push notification token described above. We do not display ads.</p>
+      </section>
+
+      <section class="policy-section" id="how-we-use">
+        <h2><span class="num">2</span>How We Use Your Information</h2>
+        <p>Information collected (whether stored locally or, if you sign in, in the cloud) is used only to:</p>
+        <ul>
+          <li>Display your bookmarked and recently read duas</li>
+          <li>Track and display your reading progress</li>
+          <li>Restore your bookmarks and read history when you sign in on a new or reinstalled copy of the App</li>
+          <li>Apply your saved preferences (language, theme, font size, reminder times)</li>
+          <li>Deliver the daily reminder notifications you've enabled</li>
+        </ul>
+        <p>We do not use your information for advertising, profiling, or any purpose unrelated to the functioning of the App.</p>
+      </section>
+
+      <section class="policy-section" id="storage-security">
+        <h2><span class="num">3</span>Data Storage and Security</h2>
+        <ul>
+          <li>Locally stored data lives in the App's private storage area on your device, governed by your device's own security model.</li>
+          <li>Cloud-stored data (for signed-in users) is stored in Google Cloud Firestore, secured by Google's infrastructure and access-controlled so that only your authenticated account can read or write your own data.</li>
+          <li>We do not maintain our own servers that store your personal data outside of Firebase/Google Cloud's managed infrastructure.</li>
+        </ul>
+        <div class="note"><strong>Note:</strong> No method of electronic storage or transmission is 100% secure, but we take reasonable, industry-standard measures to protect your information.</div>
+      </section>
+
+      <section class="policy-section" id="sharing">
+        <h2><span class="num">4</span>Data Sharing and Third Parties</h2>
+        <p>We do not sell, rent, or trade your personal information.</p>
+        <p>We use the following third-party services to operate the App, each of which processes data on our behalf as described above:</p>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>Service</th>
+                <th>Purpose</th>
+                <th>Data Involved</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Firebase Authentication / Google Sign-In</td>
+                <td>Optional sign-in</td>
+                <td>Email, display name, profile photo</td>
+              </tr>
+              <tr>
+                <td>Cloud Firestore</td>
+                <td>Optional cloud backup of bookmarks/read history</td>
+                <td>Bookmarks, read history, basic profile fields</td>
+              </tr>
+              <tr>
+                <td>Firebase Cloud Messaging</td>
+                <td>Push notification delivery</td>
+                <td>Device notification token</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p>These providers (Google/Firebase) may process data in accordance with their own privacy policies. We do not share your data with any other third party.</p>
+      </section>
+
+      <section class="policy-section" id="rights">
+        <h2><span class="num">5</span>Your Rights and Choices</h2>
+        <ul>
+          <li><strong>Use the App without an account.</strong> Signing in is never required.</li>
+          <li><strong>Sign out at any time</strong> (Settings → Sign Out). Your bookmarks and read history remain safely on your device — signing out does not delete anything locally.</li>
+          <li><strong>Delete your account and cloud data</strong> (Settings → Delete Account). This permanently deletes your bookmarks, read history, and profile information from our cloud database across all devices, and cannot be undone. Data already stored locally on a given device is separate and is removed by uninstalling the App or clearing its storage.</li>
+          <li><strong>Control notifications</strong> at any time from Settings, including disabling reminders entirely.</li>
+        </ul>
+      </section>
+
+      <section class="policy-section" id="children">
+        <h2><span class="num">6</span>Children's Privacy</h2>
+        <p>The App does not knowingly collect personal information from children. The App is intended for general audiences interested in Islamic supplications (duas), and account sign-in is optional and not required for any core feature.</p>
+      </section>
+
+      <section class="policy-section" id="changes">
+        <h2><span class="num">7</span>Changes to This Policy</h2>
+        <p>We may update this Privacy Policy from time to time. Material changes will be reflected by updating the "Last updated" date above. Continued use of the App after changes are posted constitutes acceptance of the revised policy.</p>
+      </section>
+
+      <section class="policy-section" id="contact">
+        <h2><span class="num">8</span>Contact Us</h2>
+        <p>If you have questions or concerns about this Privacy Policy or how your data is handled, please contact us at:</p>
+      </section>
+
+      <div class="contact-card">
+        <div>
+          <h2>Still have questions?</h2>
+          <p>Reach out and we'll get back to you about how your data is handled in Dua 360.</p>
+        </div>
+        <a class="btn" href="mailto:[Insert Contact Email]">Email Us</a>
+      </div>
+
+    </article>
+  </main>
+</div>
+
+<footer class="site-footer">
+  © 2026 Dua 360. All rights reserved. · This page reflects the Privacy Policy as of the "Last updated" date above.
+</footer>
+
+<button class="back-to-top" id="backToTop" aria-label="Back to top">
+  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M18 15l-6-6-6 6"/></svg>
+</button>
+
+<script>
+  // Back-to-top visibility
+  const backToTop = document.getElementById('backToTop');
+  window.addEventListener('scroll', () => {
+    backToTop.classList.toggle('visible', window.scrollY > 400);
+  });
+  backToTop.addEventListener('click', () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+
+  // Active TOC highlighting via IntersectionObserver
+  const sections = document.querySelectorAll('section.policy-section, .summary-card');
+  const tocLinks = document.querySelectorAll('.toc a');
+  const linkMap = new Map();
+  tocLinks.forEach(link => linkMap.set(link.getAttribute('href').slice(1), link));
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      const link = linkMap.get(entry.target.id);
+      if (!link) return;
+      if (entry.isIntersecting) {
+        tocLinks.forEach(l => l.classList.remove('active'));
+        link.classList.add('active');
+      }
+    });
+  }, { rootMargin: '-20% 0px -70% 0px', threshold: 0 });
+
+  sections.forEach(s => { if (s.id) observer.observe(s); });
+</script>
+
+</body>
+</html>
