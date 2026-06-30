@@ -1,10 +1,10 @@
-# Privacy Policy for Dua 360
+# Privacy Policy for Dua 360 - Daily Azkar Duas
 
-**Last updated:** [Insert Date]
+**Last updated:** June 30, 2026
 
-This Privacy Policy explains how Dua 360 ("the App", "we", "us", or "our") collects, uses, stores, and protects information when you use the App. We built Dua 360 to be usable fully offline with no account at all — anything beyond that is optional and explained below.
+Dua 360 - Daily Azkar Duas is your daily companion for authentic duas and adhkar. This Privacy Policy explains how the App ("we", "us", or "our") collects, uses, stores, and protects information when you use it. We built the App to be usable fully offline with no account at all — anything beyond that is optional and explained below.
 
-By using Dua 360, you agree to the collection and use of information in accordance with this policy.
+By using the App, you agree to the collection and use of information in accordance with this policy.
 
 ---
 
@@ -114,5 +114,5 @@ We may update this Privacy Policy from time to time. Material changes will be re
 
 If you have questions or concerns about this Privacy Policy or how your data is handled, please contact us at:
 
-**Email:** [Insert Contact Email]
-**App:** Dua 360
+**Email:** supportappdevcore@gmail.com
+**App:** Dua 360 - Daily Azkar Duas
