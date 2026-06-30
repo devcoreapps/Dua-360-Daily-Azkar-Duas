@@ -503,13 +503,12 @@
         <p>This data stays on your device. Uninstalling the App or clearing its data removes it permanently, and we have no copy of it.</p>
 
         <h3>1.2 Information Collected When You Sign In (Optional)</h3>
-        <p>If you choose to sign in with Google to enable backup and sync, we collect and store the following in our cloud database (Google Cloud Firestore), associated with your account:</p>
+        <p>If you choose to sign in with Google to enable backup and sync, we collect only your <strong>name</strong> and <strong>Gmail address</strong> from your Google account. This is used solely to back up your bookmarks and your marked as read duas to our cloud database (Google Cloud Firestore), and to restore them on any other device where you sign in with the same account.</p>
         <ul>
-          <li><strong>Basic profile information</strong> from your Google account: email address, display name, and profile photo URL</li>
           <li><strong>Your bookmarks</strong>, including which dua was bookmarked, the date and time it was bookmarked, its category, and the language you were using</li>
           <li><strong>Your read history</strong>, including which duas you marked as read and when</li>
         </ul>
-        <p>This is the same data described in section 1.1. Signing in simply copies it to the cloud, and back down to any other device where you sign in, so it isn't lost. We do not collect any additional personal information through the sign-in process beyond what Google provides for authentication.</p>
+        <p>This is the same data described in section 1.1. Signing in simply copies it to the cloud, and back down to any other device where you sign in, so it isn't lost. We do not collect any additional personal information through the sign-in process beyond your name and Gmail address.</p>
 
         <h3>1.3 Push Notification Token</h3>
         <p>The App uses Firebase Cloud Messaging to support push notifications. This generates a unique device token used solely to deliver notifications to your device. This token does not contain personal information and is not linked to your identity unless you are also signed in.</p>
@@ -566,12 +565,12 @@
               <tr>
                 <td>Firebase Authentication / Google Sign-In</td>
                 <td>Optional sign-in</td>
-                <td>Email, display name, profile photo</td>
+                <td>Name, Gmail address</td>
               </tr>
               <tr>
                 <td>Cloud Firestore</td>
                 <td>Optional cloud backup of bookmarks/read history</td>
-                <td>Bookmarks, read history, basic profile fields</td>
+                <td>Bookmarks, read history, name, Gmail address</td>
               </tr>
               <tr>
                 <td>Firebase Cloud Messaging</td>

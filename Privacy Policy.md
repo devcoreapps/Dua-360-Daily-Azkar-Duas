@@ -31,13 +31,12 @@ This data stays on your device. Uninstalling the App or clearing its data remove
 
 ### 2.2 Information Collected When You Sign In (Optional)
 
-If you choose to sign in with Google to enable backup and sync, we collect and store the following in our cloud database (Google Cloud Firestore), associated with your account:
+If you choose to sign in with Google to enable backup and sync, we collect only your **name** and **Gmail address** from your Google account. This is used solely to back up your bookmarks and your marked as read duas to our cloud database (Google Cloud Firestore), and to restore them on any other device where you sign in with the same account.
 
-- **Basic profile information** from your Google account: email address, display name, and profile photo URL
 - **Your bookmarks**, including which dua was bookmarked, the date and time it was bookmarked, its category, and the language you were using
 - **Your read history**, including which duas you marked as read and when
 
-This is the same data described in section 2.1. Signing in simply copies it to the cloud, and back down to any other device where you sign in, so it isn't lost. We do not collect any additional personal information through the sign-in process beyond what Google provides for authentication.
+This is the same data described in section 2.1. Signing in simply copies it to the cloud, and back down to any other device where you sign in, so it isn't lost. We do not collect any additional personal information through the sign-in process beyond your name and Gmail address.
 
 ### 2.3 Push Notification Token
 
@@ -81,8 +80,8 @@ We use the following third-party services to operate the App, each of which proc
 
 | Service | Purpose | Data Involved |
 |---|---|---|
-| Firebase Authentication / Google Sign-In | Optional sign-in | Email, display name, profile photo |
-| Cloud Firestore | Optional cloud backup of bookmarks/read history | Bookmarks, read history, basic profile fields |
+| Firebase Authentication / Google Sign-In | Optional sign-in | Name, Gmail address |
+| Cloud Firestore | Optional cloud backup of bookmarks/read history | Bookmarks, read history, name, Gmail address |
 | Firebase Cloud Messaging | Push notification delivery | Device notification token |
 
 These providers (Google/Firebase) may process data in accordance with their own privacy policies. We do not share your data with any other third party.
