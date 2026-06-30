@@ -1,6 +1,6 @@
-# Dua 360 - Daily Azkar & Duas — Privacy Policy
+# Dua 360 - Daily Azkar Duas Privacy Policy
 
-Public privacy policy page for the **Dua 360 - Daily Azkar & Duas** app, hosted via GitHub Pages.
+Public privacy policy page for the **Dua 360 - Daily Azkar Duas** app, hosted via GitHub Pages.
 
 - Live page: `index.html`
 - Source content: `Privacy Policy.md`

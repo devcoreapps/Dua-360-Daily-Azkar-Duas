@@ -2,7 +2,7 @@
 
 **Last updated:** June 30, 2026
 
-Dua 360 - Daily Azkar Duas is your daily companion for authentic duas and adhkar. This Privacy Policy explains how the App ("we", "us", or "our") collects, uses, stores, and protects information when you use it. We built the App to be usable fully offline with no account at all — anything beyond that is optional and explained below.
+Dua 360 - Daily Azkar Duas is your daily companion for authentic duas and azkar. This Privacy Policy explains how the App ("we", "us", or "our") collects, uses, stores, and protects information when you use it. We built the App to be usable fully offline with no account at all. Anything beyond that is optional and explained below.
 
 By using the App, you agree to the collection and use of information in accordance with this policy.
 
@@ -23,9 +23,9 @@ By using the App, you agree to the collection and use of information in accordan
 
 When you use the App without signing in, the following is stored locally on your device and is never transmitted to us:
 
-- **Bookmarked duas** — which duas you have saved
-- **Read history** — which duas you have marked as read, used to show your reading progress
-- **App preferences** — display language, translation language, theme (light/dark), font size and font choice, and notification reminder times
+- **Bookmarked duas**, meaning which duas you have saved
+- **Read history**, meaning which duas you have marked as read, used to show your reading progress
+- **App preferences**, including display language, translation language, theme (light/dark), font size and font choice, and notification reminder times
 
 This data stays on your device. Uninstalling the App or clearing its data removes it permanently, and we have no copy of it.
 
@@ -37,7 +37,7 @@ If you choose to sign in with Google to enable backup and sync, we collect and s
 - **Your bookmarks**, including which dua was bookmarked, the date and time it was bookmarked, its category, and the language you were using
 - **Your read history**, including which duas you marked as read and when
 
-This is the same data described in section 2.1 — signing in simply copies it to the cloud (and back down to any other device where you sign in) so it isn't lost. We do not collect any additional personal information through the sign-in process beyond what Google provides for authentication.
+This is the same data described in section 2.1. Signing in simply copies it to the cloud, and back down to any other device where you sign in, so it isn't lost. We do not collect any additional personal information through the sign-in process beyond what Google provides for authentication.
 
 ### 2.3 Push Notification Token
 
@@ -92,7 +92,7 @@ These providers (Google/Firebase) may process data in accordance with their own 
 ## 6. Your Rights and Choices
 
 - **Use the App without an account.** Signing in is never required.
-- **Sign out at any time** (Settings → Sign Out). Your bookmarks and read history remain safely on your device — signing out does not delete anything locally.
+- **Sign out at any time** (Settings → Sign Out). Your bookmarks and read history remain safely on your device, since signing out does not delete anything locally.
 - **Delete your account and cloud data** (Settings → Delete Account). This permanently deletes your bookmarks, read history, and profile information from our cloud database across all devices, and cannot be undone. Data already stored locally on a given device is separate and is removed by uninstalling the App or clearing its storage.
 - **Control notifications** at any time from Settings, including disabling reminders entirely.
 
